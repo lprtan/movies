@@ -1,9 +1,7 @@
-﻿@model List<Movie>
+﻿
 @{
     Layout = null;
 }
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,14 +15,6 @@
 
 </head>
 <body>
-
-    @using (Html.BeginForm("SearchMovies", "Movies", FormMethod.Post))
-    {
-        <div class="input-group">
-            <input type="search" name="searchMovieName" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <button type="submit" class="btn btn-outline-primary">Film Ara</button>
-        </div>
-    }
     <div class="container">
         <h2>Filmler</h2>
         <table class="table table-bordered">
